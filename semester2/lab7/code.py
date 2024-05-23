@@ -2,8 +2,7 @@ def iinput():
     print("Введите массив:")
     m2d = []
     for i in range(3):
-        m2d.append([])
-        m2d[i].extend(map(int, input().split()))
+        m2d.append(list(map(int, input().split())))
     print("Введите два числа: ",end="")
     i1, i2 = map(int, input().split())
     return (m2d, i1, i2)
